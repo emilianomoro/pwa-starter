@@ -1,0 +1,45 @@
+<ion-content >
+
+  <ion-row class="row-action"> 
+    <ion-col class="text-center"> 
+      <h5>Agregar Mi HEB móvil al Home</h5>
+    </ion-col>
+  </ion-row>
+  <ion-row class="slider"> 
+  <ion-slides pager="true" scrollbar="false" [options]="slideOpts" #slides>
+    <ion-slide>
+      <p> &nbsp;</p>
+      <img src="assets/images/ios_slider/slide4.gif">
+      
+    </ion-slide>
+    <ion-slide>
+      <p>1. Selecciona el Botón de Compartir</p>
+        <img src="assets/images/ios_slider/slide1.gif">
+      
+    </ion-slide>
+    <ion-slide>
+      <p>2. Haz Scroll hasta la opción "Agregar a Inicio"</p>
+        <img src="assets/images/ios_slider/slide2.gif">
+      
+    </ion-slide>
+    <ion-slide>
+      <p>3. Haz click en "Agregar" y listo!</p>  
+        <img src="assets/images/ios_slider/slide3.gif">
+        
+    </ion-slide>
+    
+</ion-slides>
+<button type="submit" ion-button color="dark" class="swiper-button-prev swiper-button-black" (click)="prevSlide()"></button>
+<button type="submit" ion-button color="light" class="swiper-button-next swiper-button-black" (click)="nextSlide()"></button>
+
+</ion-row>
+
+
+</ion-content>
+<ion-row class="row-action"> 
+  <ion-col class="text-center"> 
+    <ion-button size="small" shape="round" (click)="runInBrowser()">
+      Continuar a la App
+    </ion-button>
+  </ion-col>
+</ion-row>
